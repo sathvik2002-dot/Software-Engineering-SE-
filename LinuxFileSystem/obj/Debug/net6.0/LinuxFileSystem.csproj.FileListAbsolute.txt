@@ -1,0 +1,11 @@
+C:\Users\asasm\source\repos\Composite-Design-Pattern\LinuxFileSystem\bin\Debug\net6.0\LinuxFileSystem.deps.json
+C:\Users\asasm\source\repos\Composite-Design-Pattern\LinuxFileSystem\bin\Debug\net6.0\LinuxFileSystem.dll
+C:\Users\asasm\source\repos\Composite-Design-Pattern\LinuxFileSystem\bin\Debug\net6.0\LinuxFileSystem.pdb
+C:\Users\asasm\source\repos\Composite-Design-Pattern\LinuxFileSystem\obj\Debug\net6.0\LinuxFileSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asasm\source\repos\Composite-Design-Pattern\LinuxFileSystem\obj\Debug\net6.0\LinuxFileSystem.AssemblyInfoInputs.cache
+C:\Users\asasm\source\repos\Composite-Design-Pattern\LinuxFileSystem\obj\Debug\net6.0\LinuxFileSystem.AssemblyInfo.cs
+C:\Users\asasm\source\repos\Composite-Design-Pattern\LinuxFileSystem\obj\Debug\net6.0\LinuxFileSystem.csproj.CoreCompileInputs.cache
+C:\Users\asasm\source\repos\Composite-Design-Pattern\LinuxFileSystem\obj\Debug\net6.0\LinuxFileSystem.dll
+C:\Users\asasm\source\repos\Composite-Design-Pattern\LinuxFileSystem\obj\Debug\net6.0\refint\LinuxFileSystem.dll
+C:\Users\asasm\source\repos\Composite-Design-Pattern\LinuxFileSystem\obj\Debug\net6.0\LinuxFileSystem.pdb
+C:\Users\asasm\source\repos\Composite-Design-Pattern\LinuxFileSystem\obj\Debug\net6.0\ref\LinuxFileSystem.dll
