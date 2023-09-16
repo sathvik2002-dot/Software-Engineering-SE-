@@ -10,8 +10,4 @@
     <EditorConfigFiles Remove="C:\Users\asasm\source\repos\Composite-Design-Pattern\LinuxFileSystem\.editorconfig" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="C:\Users\asasm\source\repos\Composite-Design-Pattern\LinuxFileSystem\.editorconfig" />
-  </ItemGroup>
-
 </Project>

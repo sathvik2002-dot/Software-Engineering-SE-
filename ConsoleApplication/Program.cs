@@ -19,14 +19,14 @@ namespace ConsoleApplication
         /// <summary>
         /// Printing the handled exception in the console.
         /// </summary>
-        static void Main(string[] args)
+        static void Main()
         {
-            DirectoryClass root = new DirectoryClass("Root");
-            DirectoryClass downloads = new DirectoryClass("Downloads");
-            DirectoryClass documents = new DirectoryClass("Documents");
-            DirectoryClass desktop = new DirectoryClass("Desktop");
-            DirectoryClass document1 = new DirectoryClass("Document1");
-            FileClass document_file_1 = new FileClass("File1");
+            DirectoryClass root = new("Root");
+            DirectoryClass downloads = new("Downloads");
+            DirectoryClass documents = new("Documents");
+            DirectoryClass desktop = new("Desktop");
+            DirectoryClass document1 = new("Document1");
+            FileClass document_file_1 = new("File1");
             root.Add(downloads);
             root.Add(documents);
             root.Add(desktop);

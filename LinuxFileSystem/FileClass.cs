@@ -36,14 +36,14 @@ namespace LinuxFileSystem
     /// </summary>
     public class FileClass : IFileSystem
     {
-        string filename;
+        readonly string _filename;
         public FileClass(string name)
         {
-            filename = name;
+            _filename = name;
         }
         public string getname()
         {
-            return filename;
+            return _filename;
         }
 
         /// <summary>

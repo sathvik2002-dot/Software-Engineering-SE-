@@ -18,16 +18,16 @@ namespace LinuxFileSystem
     /// </summary>
     public class DirectoryClass : IFileSystem
     {
-        string directoryname;
-        List<IFileSystem> filesystemlist;
+        readonly string _directoryname;
+        readonly List<IFileSystem> _filesystemlist;
 
         /// <summary>
         /// Initialise the current directory with a given name and also allocating certain space for list of files in current directory.
         /// </summary>
-        public DirectoryClass(String name)
+        public DirectoryClass( string name )
         {
-            this.directoryname = name;
-            filesystemlist = new List<IFileSystem>();
+            _directoryname = name;
+            _filesystemlist = new List<IFileSystem>();
         }
 
         /// <summary>
@@ -35,7 +35,7 @@ namespace LinuxFileSystem
         /// </summary>
         public string getname()
         {
-            return directoryname;
+            return _directoryname;
         }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace LinuxFileSystem
         /// </summary>
         public void Add(IFileSystem filesystemobj)
         {
-            filesystemlist.Add(filesystemobj);
+            _filesystemlist.Add(filesystemobj);
         }
 
         /// <summary>
@@ -51,7 +51,7 @@ namespace LinuxFileSystem
         /// </summary>
         public void Remove(IFileSystem filesystemobj)
         {
-            filesystemlist.Remove(filesystemobj);
+            _filesystemlist.Remove(filesystemobj);
         }
 
         /// <summary>
@@ -60,10 +60,10 @@ namespace LinuxFileSystem
         /// <returns> Returns List of file names .</returns>
         public List<string> ls()
         {
-            List<string> listofstrings = new List<string>();
-            if (filesystemlist != null)
+            List<string> listofstrings = new();
+            if (_filesystemlist != null)
             {
-                foreach (IFileSystem obj in filesystemlist)
+                foreach (IFileSystem obj in _filesystemlist)
                 {
                     listofstrings.Add(obj.getname());
                 }
@@ -84,7 +84,7 @@ namespace LinuxFileSystem
             foreach (string subpath in subpaths)
             {
                 // Find the subdirectory with the specified name
-                IFileSystem subdirectory = filesystemlist.FirstOrDefault(obj => obj.getname() == subpath)!;
+                IFileSystem subdirectory = _filesystemlist.FirstOrDefault(obj => obj.getname() == subpath)!;
 
                 if (subdirectory != null && subdirectory is DirectoryClass)
                 {

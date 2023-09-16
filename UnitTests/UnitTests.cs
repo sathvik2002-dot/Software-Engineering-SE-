@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
 * Filename    = UnitTests.cs
 *
 * Author      = Sathvik
@@ -25,17 +25,19 @@ namespace UnitTests
         /// </summary>
         public void TestMethod1()
         {
-            DirectoryClass root = new DirectoryClass("Root");
-            DirectoryClass downloads = new DirectoryClass("Downloads");
-            DirectoryClass documents = new DirectoryClass("Documents");
-            DirectoryClass desktop = new DirectoryClass("Desktop");
-            FileClass download_file_1 = new FileClass("File1");
+            DirectoryClass root = new("Root");
+            DirectoryClass downloads = new("Downloads");
+            DirectoryClass documents = new("Documents");
+            DirectoryClass desktop = new("Desktop");
+            FileClass download_file_1 = new("File1");
             root.Add(downloads);
             root.Add(documents);
             root.Add(desktop);
             downloads.Add(download_file_1);
-            List<string> downloadfiles = new List<string>();
-            downloadfiles.Add("File1");
+            List<string> downloadfiles = new()
+            {
+                "File1"
+            };
             Assert.IsTrue(Enumerable.SequenceEqual(downloadfiles, root.cd("Downloads").ls()));
         }
 
@@ -45,17 +47,19 @@ namespace UnitTests
         /// </summary>
         public void TestMethod2()
         {
-            DirectoryClass root = new DirectoryClass("Root");
-            DirectoryClass downloads = new DirectoryClass("Downloads");
-            DirectoryClass documents = new DirectoryClass("Documents");
-            DirectoryClass desktop = new DirectoryClass("Desktop");
+            DirectoryClass root = new("Root");
+            DirectoryClass downloads = new("Downloads");
+            DirectoryClass documents = new("Documents");
+            DirectoryClass desktop = new("Desktop");
             root.Add(downloads);
             root.Add(documents);
             root.Add(desktop);
-            List<string> rootfiles = new List<string>();
-            rootfiles.Add("Downloads");
-            rootfiles.Add("Documents");
-            rootfiles.Add("Desktop");
+            List<string> rootfiles = new()
+            {
+                "Downloads" ,
+                "Documents" ,
+                "Desktop"
+            };
             Assert.IsTrue(Enumerable.SequenceEqual(rootfiles, root.ls()));
         }
     }
