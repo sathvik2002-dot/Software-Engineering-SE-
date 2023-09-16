@@ -15,5 +15,5 @@ Represents the Interface of Linux File System for users to do some functions.
 Printed the handled exception in the console(Example).
 ### UnitTests.cs
 Represents a test class for the testing functionality such as listing all files in directory and change directory.
-### Find the UML diagram for the project :
+### UML diagram :
 ![Uml](https://github.com/sathvik2002-dot/composite-design-pattern/assets/75849338/d8b8da4e-db7d-4ddd-a0e0-eb052db0ae2a)
